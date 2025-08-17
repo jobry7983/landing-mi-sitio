@@ -41,8 +41,9 @@ landing-page/
 3. Abre `index.html` en tu navegador favorito.
 
 ```bash
-git clone https://github.com/jobry7983/landing-page.git
-cd landing-page
+git clone https://github.com/jobry7983/landing-mi-sitio.git
+cd landing-mi-sitio
+
 
 
 
