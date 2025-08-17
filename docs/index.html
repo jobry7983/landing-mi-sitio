@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing Atractiva</title>
+
+  <!-- Google Fonts: Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+
+  <!-- ✅ Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- AOS Animations -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+<body class="bg-white text-gray-800 scroll-smooth font-[Inter]">
+
+  <!-- 🌙 Navegación fija -->
+  <header class="fixed top-0 left-0 w-full bg-white shadow z-50">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold">MiSitio</h1>
+      <nav class="hidden md:flex gap-6">
+        <a href="#features" class="hover:text-blue-500">Características</a>
+        <a href="#contacto" class="hover:text-blue-500">Contacto</a>
+      </nav>
+      <!-- Menú móvil -->
+      <div class="md:hidden">
+        <button id="menu-btn" class="text-2xl">&#9776;</button>
+      </div>
+    </div>
+    <!-- Menú desplegable móvil -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t px-4 pb-4">
+      <a href="#features" class="block py-2">Características</a>
+      <a href="#contacto" class="block py-2">Contacto</a>
+    </div>
+  </header>
+
+  <!-- 💰 Hero Section -->
+  <section class="min-h-screen relative overflow-hidden text-white flex items-center justify-center">
+    <!-- Fondo A -->
+    <div id="bg-a" class="absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-100"
+      style="background-image: url('assets/images/1.jpg');"></div>
+
+    <!-- Fondo B -->
+    <div id="bg-b" class="absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0"
+      style="background-image: url('assets/images/2.jpg');"></div>
+
+    <!-- Capa oscura -->
+    <div class="absolute inset-0 bg-black bg-opacity-60 z-0"></div>
+
+    <!-- Contenido -->
+    <div class="relative z-10 text-center px-4" data-aos="fade-up">
+      <h2 class="text-4xl md:text-6xl font-bold mb-4">Haz crecer tu presencia digital</h2>
+      <p class="text-lg md:text-xl mb-6">Un sitio moderno, rápido y adaptable</p>
+      <a href="#contacto"
+        class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-full font-semibold transition">¡Comienza ahora!</a>
+    </div>
+  </section>
+
+  <!-- 🧠 Características -->
+  <section id="features" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h3 class="text-3xl font-bold text-center mb-12" data-aos="fade-down">Características destacadas</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow" data-aos="fade-up">
+          <h4 class="text-xl font-semibold mb-2">⚡ Animaciones suaves</h4>
+          <p>Atractivas animaciones con AOS para una experiencia visual única.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow" data-aos="fade-up" data-aos-delay="100">
+          <h4 class="text-xl font-semibold mb-2">📱 Diseño responsive</h4>
+          <p>Se adapta perfectamente a cualquier dispositivo, desde móviles hasta escritorio.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow" data-aos="fade-up" data-aos-delay="200">
+          <h4 class="text-xl font-semibold mb-2">🌙 Navegación fija</h4>
+          <p>Siempre accesible en la parte superior, ideal para usabilidad.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 📢 CTA Final -->
+  <section id="contacto" class="py-20 bg-blue-600 text-white text-center" data-aos="zoom-in">
+    <div class="container mx-auto px-4">
+      <h3 class="text-3xl font-bold mb-4">¿Listo para transformar tu web?</h3>
+      <p class="mb-6">Contáctanos hoy y te ayudaremos a lograrlo.</p>
+      <a href="#"
+        class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition">Contáctanos</a>
+    </div>
+  </section>
+
+  <!-- 💬 Footer -->
+  <footer class="bg-gray-900 text-white py-8">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-sm space-y-4 md:space-y-0">
+      <div>&copy; 2025 MiSitio. Todos los derechos reservados.</div>
+
+      <div class="flex justify-center space-x-6 text-2xl text-white">
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="hover:text-yellow-400 transition">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="hover:text-yellow-400 transition">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://wa.me/5215512345678" target="_blank" rel="noopener noreferrer" class="hover:text-yellow-400 transition">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </div>
+
+      <a href="#" class="hover:text-blue-400">Términos de Privacidad</a>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    document.getElementById('menu-btn').addEventListener('click', () => {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    });
+
+    // Fondo animado del Hero
+    const images = [
+      "assets/images/3.jpg",
+      "assets/images/4.jpeg",
+      "assets/images/5.webp",
+      "assets/images/6.jpg",
+      "assets/images/7.webp"
+    ];
+
+    let index = 0;
+    let showingA = true;
+
+    const bgA = document.getElementById('bg-a');
+    const bgB = document.getElementById('bg-b');
+
+    setInterval(() => {
+      index = (index + 1) % images.length;
+
+      if (showingA) {
+        bgB.style.backgroundImage = `url('${images[index]}')`;
+        bgA.classList.replace('opacity-100', 'opacity-0');
+        bgB.classList.replace('opacity-0', 'opacity-100');
+      } else {
+        bgA.style.backgroundImage = `url('${images[index]}')`;
+        bgB.classList.replace('opacity-100', 'opacity-0');
+        bgA.classList.replace('opacity-0', 'opacity-100');
+      }
+
+      showingA = !showingA;
+    }, 5000);
+  </script>
+</body>
+</html>
